@@ -61,6 +61,7 @@ int main()
     { // Example 1
         std::vector<int> input{ 2, 7, 11, 15 };
         int target = 9;
+        std::vector<int> want{ 0, 1 };
         std::vector<int> got1{ sl.twoSum(input, target) };
         std::vector<int> got2{ sl.twoSumWithHashMap(input, target) };
         assert(got1 == want);
